@@ -16,3 +16,4 @@ use Inertia\Inertia;
 */
 
 Route::get('/', [HomeController::class,'index'])->name('home');
+Route::post('/login', [HomeController::class,'login'])->name('login');
