@@ -16,7 +16,7 @@ class FirebaseService {
 
     public function __construct()
     {
-        $this->firebase = (new Factory)->withServiceAccount('./key/crudusers-5b92c-f11c1e50e899.json')
+        $this->firebase = (new Factory)->withServiceAccount('./key/crudusers.json')
                                         ->withDatabaseUri('https://crudusers-5b92c-default-rtdb.firebaseio.com');
         $this->db = $this->firebase->createDatabase(); 
         $this->auth =  $this->firebase->createAuth(); 
